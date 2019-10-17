@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FC923589CB0009AF188 /* MainViewController.swift */; };
+		BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */; };
+		BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */; };
 		BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B7C49234DDA0600131D89 /* AppDelegate.swift */; };
 		BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B7C4B234DDA0600131D89 /* ViewController.swift */; };
 		BE9B7C4E234DDA0A00131D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE679FC923589CB0009AF188 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNSTextFieldCell.swift; sourceTree = "<group>"; };
+		BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
 		BE9B7C46234DDA0600131D89 /* PodManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9B7C49234DDA0600131D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9B7C4B234DDA0600131D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				BE9B7C4F234DDA0A00131D89 /* Main.storyboard */,
 				BE9B7C52234DDA0A00131D89 /* Info.plist */,
 				BE9B7C53234DDA0A00131D89 /* PodManager.entitlements */,
+				BE679FC923589CB0009AF188 /* MainViewController.swift */,
+				BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */,
+				BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */,
 			);
 			path = PodManager;
 			sourceTree = "<group>";
@@ -133,8 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */,
 				BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */,
 				BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */,
+				BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */,
+				BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
