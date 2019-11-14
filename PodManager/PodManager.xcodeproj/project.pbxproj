@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */; };
 		BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FC923589CB0009AF188 /* MainViewController.swift */; };
 		BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */; };
 		BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldCell.swift; sourceTree = "<group>"; };
 		BE679FC923589CB0009AF188 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNSTextFieldCell.swift; sourceTree = "<group>"; };
 		BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				BE679FC923589CB0009AF188 /* MainViewController.swift */,
 				BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */,
 				BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */,
+				BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */,
 			);
 			path = PodManager;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */,
 				BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */,
 				BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */,
+				BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */,
 				BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */,
 				BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */,
 			);

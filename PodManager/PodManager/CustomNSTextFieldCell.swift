@@ -10,7 +10,7 @@ import Cocoa
 
 class CustomNSTextFieldCell: NSTextFieldCell {
     override func drawingRect(forBounds theRect: NSRect) -> NSRect {
-        let newRect = NSRect(x: 0, y: (theRect.size.height - 22) / 2, width: theRect.size.width, height: 22)
+        let newRect = NSRect(x: 0, y: (theRect.size.height - 24) / 2, width: theRect.size.width, height: 24)
         return super.drawingRect(forBounds: newRect)
     }
 }
