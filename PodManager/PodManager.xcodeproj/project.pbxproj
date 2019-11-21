@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */; };
+		BE5995F02386DD5F00F7BEE4 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */; };
 		BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FC923589CB0009AF188 /* MainViewController.swift */; };
 		BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */; };
 		BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldCell.swift; sourceTree = "<group>"; };
+		BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		BE679FC923589CB0009AF188 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNSTextFieldCell.swift; sourceTree = "<group>"; };
 		BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */,
 				BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */,
 				BECDB39B23869F2C00843E49 /* Colors.swift */,
+				BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */,
 			);
 			path = PodManager;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */,
+				BE5995F02386DD5F00F7BEE4 /* MainTabViewController.swift in Sources */,
 				BECDB39C23869F2C00843E49 /* Colors.swift in Sources */,
 				BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */,
 				BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */,

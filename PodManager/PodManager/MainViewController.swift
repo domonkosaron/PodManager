@@ -34,6 +34,10 @@ class MainViewController: NSViewController {
     @IBOutlet weak var favouritesButton: NSButton!
     @IBOutlet weak var templatesButton: NSButton!
     @IBOutlet weak var separator2: NSView!
+    @IBOutlet weak var tabView: NSView!
+    
+    var activeTab = 1
+    var tabChangeDelegate: TabChangeDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,9 +83,27 @@ class MainViewController: NSViewController {
         settingsButton.attributedTitle = NSAttributedString(string: "Settings", attributes: leftMenuBottomAttributes)
         
         let leftMenuTopAttributes = [ NSAttributedString.Key.foregroundColor : Colors.lightGray, NSAttributedString.Key.paragraphStyle : pstyle ]
-        myPodsButton.attributedTitle = NSAttributedString(string: "MY PODS", attributes: leftMenuTopAttributes)
+        myPodsButton.attributedTitle = NSAttributedString(string: "MY PODS 􀘙", attributes: leftMenuTopAttributes)
         popularButton.attributedTitle = NSAttributedString(string: "􀙭  POPULAR", attributes: leftMenuTopAttributes)
         favouritesButton.attributedTitle = NSAttributedString(string: "􀋃 FAVOURITES", attributes: leftMenuTopAttributes)
         templatesButton.attributedTitle = NSAttributedString(string: "􀉆  TEMPLATES", attributes: leftMenuTopAttributes)
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destinationController as? MainTabViewController {
+            tabChangeDelegate = viewController
+        }
+    }
+    @IBAction func myPodsButtonTouchUpInside(_ sender: Any) {
+        tabChangeDelegate?.changeTo(tab: 0)
+    }
+    @IBAction func popularButtonTouchUpInside(_ sender: Any) {
+        tabChangeDelegate?.changeTo(tab: 1)
+    }
+    @IBAction func favouritesButtonTouchUpInside(_ sender: Any) {
+        tabChangeDelegate?.changeTo(tab: 2)
+    }
+    @IBAction func templatesButtonTouchUpInside(_ sender: Any) {
+        tabChangeDelegate?.changeTo(tab: 3)
     }
 }

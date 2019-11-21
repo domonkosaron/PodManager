@@ -993,6 +993,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" size="20" name="HelveticaNeue-Bold"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="myPodsButtonTouchUpInside:" target="XfG-lQ-9wD" id="AUr-bc-Bqh"/>
+                                                </connections>
                                             </button>
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="nBh-hD-hBa" userLabel="Sepataror2">
                                                 <rect key="frame" x="12" y="129" width="176" height="1"/>
@@ -1012,6 +1015,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" size="20" name="HelveticaNeue-Bold"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="popularButtonTouchUpInside:" target="XfG-lQ-9wD" id="Wvu-7t-1fw"/>
+                                                                </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hkj-Yk-acz">
                                                                 <rect key="frame" x="12" y="38" width="176" height="29"/>
@@ -1019,6 +1025,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" size="20" name="HelveticaNeue-Bold"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="favouritesButtonTouchUpInside:" target="XfG-lQ-9wD" id="eQf-nL-Dmt"/>
+                                                                </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TdY-x7-dVX">
                                                                 <rect key="frame" x="12" y="0.0" width="176" height="30"/>
@@ -1026,6 +1035,9 @@
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" size="20" name="HelveticaNeue-Bold"/>
                                                                 </buttonCell>
+                                                                <connections>
+                                                                    <action selector="templatesButtonTouchUpInside:" target="XfG-lQ-9wD" id="yDd-0d-2KY"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1088,18 +1100,18 @@
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="o61-8E-Ejz">
                                 <rect key="frame" x="200" y="0.0" width="700" height="540"/>
                                 <subviews>
-                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="Wv6-5X-hjH">
+                                    <containerView translatesAutoresizingMaskIntoConstraints="NO" id="sbd-CR-qEl">
                                         <rect key="frame" x="0.0" y="0.0" width="700" height="540"/>
                                         <connections>
-                                            <segue destination="OKx-4i-AWg" kind="embed" id="H0P-TU-ax0"/>
+                                            <segue destination="sSx-df-d9j" kind="embed" id="zff-7I-Hez"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Wv6-5X-hjH" firstAttribute="top" secondItem="o61-8E-Ejz" secondAttribute="top" id="Eqr-rT-8n2"/>
-                                    <constraint firstAttribute="bottom" secondItem="Wv6-5X-hjH" secondAttribute="bottom" id="V5h-2M-fQf"/>
-                                    <constraint firstItem="Wv6-5X-hjH" firstAttribute="leading" secondItem="o61-8E-Ejz" secondAttribute="leading" id="X2v-VH-WRJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="Wv6-5X-hjH" secondAttribute="trailing" id="hb3-tM-AQX"/>
+                                    <constraint firstAttribute="bottom" secondItem="sbd-CR-qEl" secondAttribute="bottom" id="GaQ-jB-eDD"/>
+                                    <constraint firstAttribute="trailing" secondItem="sbd-CR-qEl" secondAttribute="trailing" id="Iky-Le-JZ9"/>
+                                    <constraint firstItem="sbd-CR-qEl" firstAttribute="leading" secondItem="o61-8E-Ejz" secondAttribute="leading" id="SPI-f8-rxw"/>
+                                    <constraint firstItem="sbd-CR-qEl" firstAttribute="top" secondItem="o61-8E-Ejz" secondAttribute="top" id="tb2-Jc-hhI"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -1137,6 +1149,7 @@
                         <outlet property="showInFinderButton" destination="GnH-wT-yXe" id="ArK-lN-viU"/>
                         <outlet property="sideMenuBottomView" destination="pRW-S4-Qbi" id="CYP-Nn-WVP"/>
                         <outlet property="sideMenuView" destination="bWk-6k-Ta0" id="ShH-m1-mcD"/>
+                        <outlet property="tabView" destination="sbd-CR-qEl" id="iaJ-d6-J41"/>
                         <outlet property="templatesButton" destination="TdY-x7-dVX" id="smF-bJ-Sj5"/>
                         <outlet property="terminalButton" destination="aWM-mt-cYC" id="g1L-8A-aUF"/>
                         <outlet property="topBarView" destination="ISL-4O-HsL" id="VvD-No-XWe"/>
@@ -1147,18 +1160,131 @@
             </objects>
             <point key="canvasLocation" x="85" y="916"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="F4A-7k-dVI">
+        <!--Main Tab View Controller-->
+        <scene sceneID="dhG-vA-Kr3">
             <objects>
-                <viewController id="OKx-4i-AWg" sceneMemberID="viewController">
-                    <view key="view" id="KYx-bt-JkA">
-                        <rect key="frame" x="0.0" y="0.0" width="779" height="544"/>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="unspecified" canPropagateSelectedChildViewControllerTitle="NO" id="sSx-df-d9j" customClass="MainTabViewController" customModule="PodManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="o8T-HT-GY2"/>
+                        <tabViewItem identifier="" id="N5U-2L-xTZ"/>
+                        <tabViewItem id="zIj-84-MR1"/>
+                        <tabViewItem id="YmU-9G-OA8"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="01e-st-Jeh">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <outlet property="delegate" destination="sSx-df-d9j" id="8Nq-bM-RAq"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="01e-st-Jeh" id="LNa-ea-fT0"/>
+                        <segue destination="UgH-yE-qcQ" kind="relationship" relationship="tabItems" id="tZO-hT-Cz3"/>
+                        <segue destination="45M-8d-44B" kind="relationship" relationship="tabItems" id="Rcv-3p-1nc"/>
+                        <segue destination="CNy-uT-NmB" kind="relationship" relationship="tabItems" id="Msh-QP-48r"/>
+                        <segue destination="YiY-2b-DwV" kind="relationship" relationship="tabItems" id="0Gj-Sn-UR2"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="vxx-yE-rJf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="1466"/>
+        </scene>
+        <!--MyPods-->
+        <scene sceneID="KfM-Sx-c6U">
+            <objects>
+                <viewController title="MyPods" id="UgH-yE-qcQ" sceneMemberID="viewController">
+                    <view key="view" id="mAW-co-Qix">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEA-Q5-kWk">
+                                <rect key="frame" x="109" y="169" width="57" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="My Pods" id="H8w-Ed-PBq">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
                     </view>
                 </viewController>
-                <customObject id="5a2-UL-pRb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="qXt-dN-mzD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044.5" y="964"/>
+            <point key="canvasLocation" x="1524" y="1322"/>
+        </scene>
+        <!--Popular-->
+        <scene sceneID="Z9V-ed-8YC">
+            <objects>
+                <viewController title="Popular" id="45M-8d-44B" sceneMemberID="viewController">
+                    <view key="view" id="p46-aK-Q8c">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Oi-Qy-ukN">
+                                <rect key="frame" x="144" y="181" width="51" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Popular" id="Cu6-X7-X63">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="C20-On-iJE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="914"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="Oe1-b4-ZaY">
+            <objects>
+                <viewController title="Favourites" id="CNy-uT-NmB" sceneMemberID="viewController">
+                    <view key="view" id="Rg1-qo-O64">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-od-pV0">
+                                <rect key="frame" x="87" y="213" width="67" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Favourites" id="QYy-6e-Vmm">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="Haf-k2-UhX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="1827"/>
+        </scene>
+        <!--Templates-->
+        <scene sceneID="hUj-Uz-Wmq">
+            <objects>
+                <viewController title="Templates" id="YiY-2b-DwV" sceneMemberID="viewController">
+                    <view key="view" id="4Uh-9B-Ef4">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qpz-ZG-05k">
+                                <rect key="frame" x="107" y="211" width="67" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Templates" id="zy5-MH-ZkL">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="jop-WY-EfS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="1945"/>
         </scene>
     </scenes>
     <resources>
