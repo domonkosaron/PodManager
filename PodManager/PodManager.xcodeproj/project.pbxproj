@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */; };
 		BE5995F02386DD5F00F7BEE4 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */; };
+		BE5995F22386EA6100F7BEE4 /* MyPodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */; };
+		BE5995F82386EA8C00F7BEE4 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995F72386EA8C00F7BEE4 /* PopularViewController.swift */; };
+		BE5995FA2386EA9E00F7BEE4 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995F92386EA9E00F7BEE4 /* FavouritesViewController.swift */; };
+		BE5995FC2386EAAC00F7BEE4 /* TemplatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995FB2386EAAC00F7BEE4 /* TemplatesViewController.swift */; };
 		BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FC923589CB0009AF188 /* MainViewController.swift */; };
 		BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */; };
 		BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldCell.swift; sourceTree = "<group>"; };
 		BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPodsViewController.swift; sourceTree = "<group>"; };
+		BE5995F72386EA8C00F7BEE4 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		BE5995F92386EA9E00F7BEE4 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		BE5995FB2386EAAC00F7BEE4 /* TemplatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesViewController.swift; sourceTree = "<group>"; };
 		BE679FC923589CB0009AF188 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNSTextFieldCell.swift; sourceTree = "<group>"; };
 		BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
@@ -67,6 +75,9 @@
 			children = (
 				BE9B7C49234DDA0600131D89 /* AppDelegate.swift */,
 				BE9B7C4B234DDA0600131D89 /* ViewController.swift */,
+				BE5995F72386EA8C00F7BEE4 /* PopularViewController.swift */,
+				BE5995F92386EA9E00F7BEE4 /* FavouritesViewController.swift */,
+				BE5995FB2386EAAC00F7BEE4 /* TemplatesViewController.swift */,
 				BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */,
 				BE9B7C4F234DDA0A00131D89 /* Main.storyboard */,
 				BE9B7C52234DDA0A00131D89 /* Info.plist */,
@@ -77,6 +88,7 @@
 				BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */,
 				BECDB39B23869F2C00843E49 /* Colors.swift */,
 				BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */,
+				BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */,
 			);
 			path = PodManager;
 			sourceTree = "<group>";
@@ -154,8 +166,12 @@
 				BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */,
 				BE5995F02386DD5F00F7BEE4 /* MainTabViewController.swift in Sources */,
 				BECDB39C23869F2C00843E49 /* Colors.swift in Sources */,
+				BE5995FA2386EA9E00F7BEE4 /* FavouritesViewController.swift in Sources */,
 				BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */,
+				BE5995F22386EA6100F7BEE4 /* MyPodsViewController.swift in Sources */,
+				BE5995FC2386EAAC00F7BEE4 /* TemplatesViewController.swift in Sources */,
 				BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */,
+				BE5995F82386EA8C00F7BEE4 /* PopularViewController.swift in Sources */,
 				BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */,
 				BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */,
 				BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */,

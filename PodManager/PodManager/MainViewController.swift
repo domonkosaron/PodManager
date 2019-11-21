@@ -36,7 +36,6 @@ class MainViewController: NSViewController {
     @IBOutlet weak var separator2: NSView!
     @IBOutlet weak var tabView: NSView!
     
-    var activeTab = 1
     var tabChangeDelegate: TabChangeDelegate?
     
     override func viewDidLoad() {
@@ -83,7 +82,8 @@ class MainViewController: NSViewController {
         settingsButton.attributedTitle = NSAttributedString(string: "Settings", attributes: leftMenuBottomAttributes)
         
         let leftMenuTopAttributes = [ NSAttributedString.Key.foregroundColor : Colors.lightGray, NSAttributedString.Key.paragraphStyle : pstyle ]
-        myPodsButton.attributedTitle = NSAttributedString(string: "MY PODS 􀘙", attributes: leftMenuTopAttributes)
+        let leftMenuTopHighlightedAttributes = [ NSAttributedString.Key.foregroundColor : Colors.flatGreenColor, NSAttributedString.Key.paragraphStyle : pstyle ]
+        myPodsButton.attributedTitle = NSAttributedString(string: "MY PODS 􀘙", attributes: leftMenuTopHighlightedAttributes)
         popularButton.attributedTitle = NSAttributedString(string: "􀙭  POPULAR", attributes: leftMenuTopAttributes)
         favouritesButton.attributedTitle = NSAttributedString(string: "􀋃 FAVOURITES", attributes: leftMenuTopAttributes)
         templatesButton.attributedTitle = NSAttributedString(string: "􀉆  TEMPLATES", attributes: leftMenuTopAttributes)
@@ -95,15 +95,40 @@ class MainViewController: NSViewController {
         }
     }
     @IBAction func myPodsButtonTouchUpInside(_ sender: Any) {
-        tabChangeDelegate?.changeTo(tab: 0)
+        setActive(tab: 0)
     }
     @IBAction func popularButtonTouchUpInside(_ sender: Any) {
-        tabChangeDelegate?.changeTo(tab: 1)
+        setActive(tab: 1)
     }
     @IBAction func favouritesButtonTouchUpInside(_ sender: Any) {
-        tabChangeDelegate?.changeTo(tab: 2)
+        setActive(tab: 2)
     }
     @IBAction func templatesButtonTouchUpInside(_ sender: Any) {
-        tabChangeDelegate?.changeTo(tab: 3)
+        setActive(tab: 3)
+    }
+    
+    func setActive(tab: Int) {
+        tabChangeDelegate?.changeTo(tab: tab)
+        
+        let pstyle = NSMutableParagraphStyle()
+        pstyle.alignment = .left
+        let leftMenuTopAttributes = [ NSAttributedString.Key.foregroundColor : Colors.lightGray, NSAttributedString.Key.paragraphStyle : pstyle ]
+        let leftMenuTopHighlightedAttributes = [ NSAttributedString.Key.foregroundColor : Colors.flatGreenColor, NSAttributedString.Key.paragraphStyle : pstyle ]
+        myPodsButton.attributedTitle = NSAttributedString(string: "MY PODS 􀘙", attributes: leftMenuTopAttributes)
+        popularButton.attributedTitle = NSAttributedString(string: "􀙭  POPULAR", attributes: leftMenuTopAttributes)
+        favouritesButton.attributedTitle = NSAttributedString(string: "􀋃 FAVOURITES", attributes: leftMenuTopAttributes)
+        templatesButton.attributedTitle = NSAttributedString(string: "􀉆  TEMPLATES", attributes: leftMenuTopAttributes)
+        switch tab {
+        case 0:
+            myPodsButton.attributedTitle = NSAttributedString(string: "MY PODS 􀘙", attributes: leftMenuTopHighlightedAttributes)
+        case 1:
+            popularButton.attributedTitle = NSAttributedString(string: "􀙭  POPULAR", attributes: leftMenuTopHighlightedAttributes)
+        case 2:
+            favouritesButton.attributedTitle = NSAttributedString(string: "􀋃 FAVOURITES", attributes: leftMenuTopHighlightedAttributes)
+        case 3:
+            templatesButton.attributedTitle = NSAttributedString(string: "􀉆  TEMPLATES", attributes: leftMenuTopHighlightedAttributes)
+        default:
+            break
+        }
     }
 }
