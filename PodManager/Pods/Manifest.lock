@@ -1,0 +1,16 @@
+PODS:
+  - InstantSearchClient (7.0.0)
+
+DEPENDENCIES:
+  - InstantSearchClient (~> 7.0)
+
+SPEC REPOS:
+  trunk:
+    - InstantSearchClient
+
+SPEC CHECKSUMS:
+  InstantSearchClient: c9c1522c59f109514c6a37a7ec2a622e069ba56b
+
+PODFILE CHECKSUM: 9123b444eaa4fb7966502859b74fbca1133551bf
+
+COCOAPODS: 1.8.3
