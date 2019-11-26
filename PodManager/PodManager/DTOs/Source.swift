@@ -10,6 +10,13 @@ import Foundation
 
 // MARK: - Source
 struct Source: Codable {
-    let git: String
-    let tag: String
+    let git: String?
+    let tag: String?
+    let commit: String?
+    let submodules: Bool? //Bool, ami nehol stringkent erkezik
+    let http: String?
+    let flatten: Bool?
+    let sha1, type, sha256: String?
+    let branch: String?
+    let svn: String?
 }

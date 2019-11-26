@@ -15,7 +15,7 @@ struct Hit: Codable {
     let license: String?
     let authors: [HitAuthor]?
     let platforms: Platforms?
-    let source: [String:String]?
+    let source: Source?
     let swiftVersion: String?
     let dependencies: [String]?
     let downloads: Downloads
