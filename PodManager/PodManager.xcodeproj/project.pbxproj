@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A8C6ED26509488798B1CE20 /* Pods_PodManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2137DBACF393AD06352C48AB /* Pods_PodManager.framework */; };
+		BE0222032395229B009B9A65 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0222022395229B009B9A65 /* SearchViewController.swift */; };
+		BE0222092395232C009B9A65 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0222082395232C009B9A65 /* SearchAPI.swift */; };
+		BE02220B2395258C009B9A65 /* SearchRequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE02220A2395258C009B9A65 /* SearchRequestHeader.swift */; };
 		BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */; };
 		BE5995F02386DD5F00F7BEE4 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */; };
 		BE5995F22386EA6100F7BEE4 /* MyPodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */; };
@@ -18,10 +21,14 @@
 		BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */; };
 		BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */; };
 		BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B7C49234DDA0600131D89 /* AppDelegate.swift */; };
-		BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B7C4B234DDA0600131D89 /* ViewController.swift */; };
 		BE9B7C4E234DDA0A00131D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */; };
 		BE9B7C51234DDA0A00131D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9B7C4F234DDA0A00131D89 /* Main.storyboard */; };
+		BE9F2ADA23954A1800727460 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F2AD923954A1800727460 /* Notification+Extension.swift */; };
+		BE9F2ADF23955CC900727460 /* NameCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F2ADE23955CC900727460 /* NameCellView.swift */; };
+		BE9F2AE12395603E00727460 /* VersionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F2AE02395603E00727460 /* VersionCellView.swift */; };
 		BECDB39C23869F2C00843E49 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDB39B23869F2C00843E49 /* Colors.swift */; };
+		BED0B97D2397D9A10018E78C /* ControlsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0B97C2397D9A10018E78C /* ControlsCellView.swift */; };
+		BED0B97F2397DA080018E78C /* StatusCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0B97E2397DA080018E78C /* StatusCellView.swift */; };
 		BEE1278B238D44360080D025 /* QueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1278A238D44360080D025 /* QueryResponse.swift */; };
 		BEE1278D238D446F0080D025 /* Hit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1278C238D446F0080D025 /* Hit.swift */; };
 		BEE1278F238D447F0080D025 /* HitAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1278E238D447F0080D025 /* HitAuthor.swift */; };
@@ -38,6 +45,9 @@
 		2043E37EE8E1BFD1BC77397A /* Pods-PodManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodManager.debug.xcconfig"; path = "Target Support Files/Pods-PodManager/Pods-PodManager.debug.xcconfig"; sourceTree = "<group>"; };
 		2137DBACF393AD06352C48AB /* Pods_PodManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0E570B4537E9F34B5E14A9 /* Pods-PodManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodManager.release.xcconfig"; path = "Target Support Files/Pods-PodManager/Pods-PodManager.release.xcconfig"; sourceTree = "<group>"; };
+		BE0222022395229B009B9A65 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BE0222082395232C009B9A65 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		BE02220A2395258C009B9A65 /* SearchRequestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestHeader.swift; sourceTree = "<group>"; };
 		BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextFieldCell.swift; sourceTree = "<group>"; };
 		BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPodsViewController.swift; sourceTree = "<group>"; };
@@ -49,12 +59,16 @@
 		BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
 		BE9B7C46234DDA0600131D89 /* PodManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9B7C49234DDA0600131D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE9B7C4B234DDA0600131D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9B7C50234DDA0A00131D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9B7C52234DDA0A00131D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9B7C53234DDA0A00131D89 /* PodManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodManager.entitlements; sourceTree = "<group>"; };
+		BE9F2AD923954A1800727460 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		BE9F2ADE23955CC900727460 /* NameCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCellView.swift; sourceTree = "<group>"; };
+		BE9F2AE02395603E00727460 /* VersionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCellView.swift; sourceTree = "<group>"; };
 		BECDB39B23869F2C00843E49 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BED0B97C2397D9A10018E78C /* ControlsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsCellView.swift; sourceTree = "<group>"; };
+		BED0B97E2397DA080018E78C /* StatusCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCellView.swift; sourceTree = "<group>"; };
 		BEE1278A238D44360080D025 /* QueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResponse.swift; sourceTree = "<group>"; };
 		BEE1278C238D446F0080D025 /* Hit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hit.swift; sourceTree = "<group>"; };
 		BEE1278E238D447F0080D025 /* HitAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitAuthor.swift; sourceTree = "<group>"; };
@@ -87,6 +101,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE022204239522BF009B9A65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE02220C23953EFA009B9A65 /* Tabs */,
+				BE679FC923589CB0009AF188 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE022205239522CA009B9A65 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BEE12789238D441A0080D025 /* DTOs */,
+				BE0222082395232C009B9A65 /* SearchAPI.swift */,
+				BE02220A2395258C009B9A65 /* SearchRequestHeader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BE02220623952300009B9A65 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */,
+				BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */,
+				BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */,
+				BECDB39B23869F2C00843E49 /* Colors.swift */,
+				BE9F2AD923954A1800727460 /* Notification+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE02220C23953EFA009B9A65 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F2ADD23955C8F00727460 /* Search */,
+				BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */,
+				BE5995FB2386EAAC00F7BEE4 /* TemplatesViewController.swift */,
+				BE5995F72386EA8C00F7BEE4 /* PopularViewController.swift */,
+				BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */,
+				BE5995F92386EA9E00F7BEE4 /* FavouritesViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		BE9B7C3D234DDA0600131D89 = {
 			isa = PBXGroup;
 			children = (
@@ -108,25 +166,28 @@
 		BE9B7C48234DDA0600131D89 /* PodManager */ = {
 			isa = PBXGroup;
 			children = (
-				BEE12789238D441A0080D025 /* DTOs */,
-				BE9B7C49234DDA0600131D89 /* AppDelegate.swift */,
-				BE9B7C4B234DDA0600131D89 /* ViewController.swift */,
-				BE5995F72386EA8C00F7BEE4 /* PopularViewController.swift */,
-				BE5995F92386EA9E00F7BEE4 /* FavouritesViewController.swift */,
-				BE5995FB2386EAAC00F7BEE4 /* TemplatesViewController.swift */,
-				BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */,
-				BE9B7C4F234DDA0A00131D89 /* Main.storyboard */,
-				BE9B7C52234DDA0A00131D89 /* Info.plist */,
 				BE9B7C53234DDA0A00131D89 /* PodManager.entitlements */,
-				BE679FC923589CB0009AF188 /* MainViewController.swift */,
-				BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */,
-				BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */,
-				BE4A4D16237DA4D70091D289 /* RoundedTextFieldCell.swift */,
-				BECDB39B23869F2C00843E49 /* Colors.swift */,
-				BE5995EF2386DD5F00F7BEE4 /* MainTabViewController.swift */,
-				BE5995F12386EA6100F7BEE4 /* MyPodsViewController.swift */,
+				BE9B7C52234DDA0A00131D89 /* Info.plist */,
+				BE9B7C49234DDA0600131D89 /* AppDelegate.swift */,
+				BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */,
+				BE02220623952300009B9A65 /* Helpers */,
+				BE9B7C4F234DDA0A00131D89 /* Main.storyboard */,
+				BE022205239522CA009B9A65 /* Network */,
+				BE022204239522BF009B9A65 /* ViewControllers */,
 			);
 			path = PodManager;
+			sourceTree = "<group>";
+		};
+		BE9F2ADD23955C8F00727460 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BE0222022395229B009B9A65 /* SearchViewController.swift */,
+				BE9F2ADE23955CC900727460 /* NameCellView.swift */,
+				BE9F2AE02395603E00727460 /* VersionCellView.swift */,
+				BED0B97C2397D9A10018E78C /* ControlsCellView.swift */,
+				BED0B97E2397DA080018E78C /* StatusCellView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		BEE12789238D441A0080D025 /* DTOs */ = {
@@ -269,25 +330,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0222092395232C009B9A65 /* SearchAPI.swift in Sources */,
 				BEE12795238D44FD0080D025 /* HighlightResultAuthor.swift in Sources */,
 				BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */,
 				BEE12793238D44E00080D025 /* HighlightResult.swift in Sources */,
+				BE9F2ADF23955CC900727460 /* NameCellView.swift in Sources */,
 				BE5995F02386DD5F00F7BEE4 /* MainTabViewController.swift in Sources */,
 				BEE1279F238D45E90080D025 /* Source.swift in Sources */,
+				BE9F2AE12395603E00727460 /* VersionCellView.swift in Sources */,
 				BECDB39C23869F2C00843E49 /* Colors.swift in Sources */,
 				BE5995FA2386EA9E00F7BEE4 /* FavouritesViewController.swift in Sources */,
-				BE9B7C4C234DDA0600131D89 /* ViewController.swift in Sources */,
 				BEE12797238D45090080D025 /* Name.swift in Sources */,
 				BEE12799238D451C0080D025 /* MatchLevel.swift in Sources */,
 				BEE12791238D44D00080D025 /* Downloads.swift in Sources */,
 				BE5995F22386EA6100F7BEE4 /* MyPodsViewController.swift in Sources */,
+				BE02220B2395258C009B9A65 /* SearchRequestHeader.swift in Sources */,
 				BEE1278B238D44360080D025 /* QueryResponse.swift in Sources */,
+				BE0222032395229B009B9A65 /* SearchViewController.swift in Sources */,
 				BEE1278D238D446F0080D025 /* Hit.swift in Sources */,
 				BE5995FC2386EAAC00F7BEE4 /* TemplatesViewController.swift in Sources */,
+				BED0B97F2397DA080018E78C /* StatusCellView.swift in Sources */,
 				BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */,
+				BE9F2ADA23954A1800727460 /* Notification+Extension.swift in Sources */,
 				BE5995F82386EA8C00F7BEE4 /* PopularViewController.swift in Sources */,
 				BE4A4D17237DA4D70091D289 /* RoundedTextFieldCell.swift in Sources */,
 				BEE1279B238D45BC0080D025 /* Platforms.swift in Sources */,
+				BED0B97D2397D9A10018E78C /* ControlsCellView.swift in Sources */,
 				BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */,
 				BEE1278F238D447F0080D025 /* HitAuthor.swift in Sources */,
 				BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */,

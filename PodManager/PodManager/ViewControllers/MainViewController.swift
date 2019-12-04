@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class MainViewController: NSViewController, NSTextFieldDelegate {
 
     @IBOutlet weak var projectNameView: NSView!
     @IBOutlet weak var projectNameTextField: NSTextField!
@@ -37,6 +37,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var tabView: NSView!
     
     var tabChangeDelegate: TabChangeDelegate?
+    var searchResultDelegate: SearchResultDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,9 @@ class MainViewController: NSViewController {
         searchBarTextField.focusRingType = .none
         searchBarTextField.isBordered = false
         searchBarTextField.backgroundColor = .clear
+        searchBarTextField.textColor = .black
+        
+        searchBarTextField.delegate = self
     }
     
     func configureButtonsView() {
@@ -93,6 +97,10 @@ class MainViewController: NSViewController {
         if let viewController = segue.destinationController as? MainTabViewController {
             tabChangeDelegate = viewController
         }
+        
+        if let viewController = segue.destinationController as? SearchViewController {
+            print()
+        }
     }
     @IBAction func myPodsButtonTouchUpInside(_ sender: Any) {
         setActive(tab: 0)
@@ -105,6 +113,10 @@ class MainViewController: NSViewController {
     }
     @IBAction func templatesButtonTouchUpInside(_ sender: Any) {
         setActive(tab: 3)
+    }
+    
+    @IBAction func searchButtonTouchUpInside(_ sender: Any) {
+        setActive(tab: 4)
     }
     
     func setActive(tab: Int) {
@@ -129,6 +141,20 @@ class MainViewController: NSViewController {
             templatesButton.attributedTitle = NSAttributedString(string: "􀉆  TEMPLATES", attributes: leftMenuTopHighlightedAttributes)
         default:
             break
+        }
+    }
+    
+    func controlTextDidChange(_ obj: Notification) {
+//        print("--- Text: ", searchBarTextField.stringValue)
+        SearchAPI.shared.search(for: searchBarTextField.stringValue) { [weak self] result in
+            switch result {
+            case .success(let response):
+                self?.setActive(tab: 4)
+                NotificationCenter.default.post(name: .searchResult,
+                object: response)
+            case .failure:
+                print()
+            }
         }
     }
 }

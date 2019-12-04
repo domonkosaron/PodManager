@@ -7,4 +7,5 @@ target 'PodManager' do
 
   # Pods for PodManager
   pod 'InstantSearchClient', '~> 7.0'
+  pod 'Alamofire'
 end
