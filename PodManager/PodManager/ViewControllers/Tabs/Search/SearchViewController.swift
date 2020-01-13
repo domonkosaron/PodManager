@@ -24,7 +24,6 @@ class SearchViewController: NSViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        // Do view setup here.
     }
     
     deinit {

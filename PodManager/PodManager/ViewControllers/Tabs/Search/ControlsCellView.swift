@@ -10,7 +10,6 @@ import Foundation
 import Cocoa
 
 class ControlsCellView: NSTableCellView {
-    var name: String = ""
     var hit : Hit? = nil
     var isFavourite = false
     var isAdded = false
@@ -23,23 +22,34 @@ class ControlsCellView: NSTableCellView {
     }
     
     func configure(hit: Hit) {
-        self.name = hit.name
         self.hit = hit
-        isFavourite = DataManager.shared.isFavourite(name: name)
-        setStar()
+        update()
     }
     
-    func setStar() {
+    func update() {
+        isFavourite = DataManager.shared.isFavourite(name: hit!.name)
+        isAdded = DataManager.shared.isMyPod(name: hit!.name)
+        
         if isFavourite {
             favouriteButton?.image = NSImage(named: "filled_star")
         } else {
             favouriteButton?.image = NSImage(named: "empty_star")
         }
+        
+        if isAdded {
+            addButton?.image = NSImage(named: "added")
+        } else {
+            addButton?.image = NSImage(named: "plus")
+        }
     }
     
     @IBAction func favouriteButtonAction(_ sender: Any) {
         DataManager.shared.changeFavouriteState(hit: hit!)
-        isFavourite = DataManager.shared.isFavourite(name: name)
-        setStar()
+        update()
+    }
+    
+    @IBAction func addButtonAction(_ sender: Any) {
+        DataManager.shared.changeMyPodState(hit: hit!)
+        update()
     }
 }

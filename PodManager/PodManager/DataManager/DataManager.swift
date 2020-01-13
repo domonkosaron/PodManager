@@ -11,8 +11,8 @@ import Foundation
 class DataManager {
     static let shared = DataManager()
     
-    private var favourites : [Hit] = []
-    private var myPods : [Hit] = []
+    var favourites : [Hit] = []
+    var myPods : [Hit] = []
     
     func isFavourite(name: String) -> Bool {
         return favourites.contains(where: {$0.name == name})
@@ -23,6 +23,18 @@ class DataManager {
             favourites.removeAll(where: {$0.name == hit.name})
         } else {
             favourites.append(hit)
+        }
+    }
+    
+    func isMyPod(name: String) -> Bool {
+        return myPods.contains(where: {$0.name == name})
+    }
+    
+    func changeMyPodState(hit: Hit) {
+        if isMyPod(name: hit.name) {
+            myPods.removeAll(where: {$0.name == hit.name})
+        } else {
+            myPods.append(hit)
         }
     }
 }

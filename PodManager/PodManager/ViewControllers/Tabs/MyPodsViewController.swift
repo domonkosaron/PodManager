@@ -10,6 +10,7 @@ import Cocoa
 
 class MyPodsViewController: NSViewController {
 
+    @IBOutlet weak var tableView: NSTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
