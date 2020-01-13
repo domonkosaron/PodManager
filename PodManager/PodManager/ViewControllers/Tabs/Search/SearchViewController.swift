@@ -34,7 +34,7 @@ class SearchViewController: NSViewController {
 extension SearchViewController {
     @objc func showSearch(_ notification: Notification) {
         if let searchResult = notification.object as? QueryResponse {
-            print("--- searchResult: ", searchResult.hits.first?.name)
+//            print("--- searchResult: ", searchResult.hits.first?.name)
             query = searchResult
             tableView.reloadData()
         }
@@ -61,6 +61,7 @@ extension SearchViewController: NSTableViewDelegate {
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "controlsColumn") {
             let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "controlsCell")
             guard let cellView = tableView.makeView(withIdentifier: cellIdentifier, owner: self) as? ControlsCellView else { return nil }
+            cellView.configure(hit: currentHit!)
             return cellView
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "statusColumn") {
             let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "statusCell")

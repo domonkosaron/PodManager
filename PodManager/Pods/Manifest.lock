@@ -1,20 +1,16 @@
 PODS:
   - Alamofire (4.9.1)
-  - InstantSearchClient (7.0.0)
 
 DEPENDENCIES:
   - Alamofire
-  - InstantSearchClient (~> 7.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - InstantSearchClient
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  InstantSearchClient: c9c1522c59f109514c6a37a7ec2a622e069ba56b
 
-PODFILE CHECKSUM: d3394b0eb022fdb7db2519bbebb30ca23aa0b130
+PODFILE CHECKSUM: 668fa5ea9bf1e1a9c2795405781837315c7bf383
 
 COCOAPODS: 1.8.3

@@ -9,7 +9,6 @@
 import Foundation
 import Alamofire
 
-
 class SearchAPI {
     static let shared = SearchAPI()
     

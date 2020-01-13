@@ -20,6 +20,7 @@
 		BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FC923589CB0009AF188 /* MainViewController.swift */; };
 		BE679FCC2358A1D8009AF188 /* CustomNSTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */; };
 		BE679FCE2358A48E009AF188 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */; };
+		BE93426D23CC66AB00F64850 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE93426C23CC66AB00F64850 /* DataManager.swift */; };
 		BE9B7C4A234DDA0600131D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B7C49234DDA0600131D89 /* AppDelegate.swift */; };
 		BE9B7C4E234DDA0A00131D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */; };
 		BE9B7C51234DDA0A00131D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9B7C4F234DDA0A00131D89 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		BE679FC923589CB0009AF188 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BE679FCB2358A1D8009AF188 /* CustomNSTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNSTextFieldCell.swift; sourceTree = "<group>"; };
 		BE679FCD2358A48E009AF188 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
+		BE93426C23CC66AB00F64850 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		BE9B7C46234DDA0600131D89 /* PodManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9B7C49234DDA0600131D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9B7C4D234DDA0A00131D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		BE93426B23CC669500F64850 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				BE93426C23CC66AB00F64850 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		BE9B7C3D234DDA0600131D89 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		BE9B7C48234DDA0600131D89 /* PodManager */ = {
 			isa = PBXGroup;
 			children = (
+				BE93426B23CC669500F64850 /* DataManager */,
 				BE9B7C53234DDA0A00131D89 /* PodManager.entitlements */,
 				BE9B7C52234DDA0A00131D89 /* Info.plist */,
 				BE9B7C49234DDA0600131D89 /* AppDelegate.swift */,
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0222092395232C009B9A65 /* SearchAPI.swift in Sources */,
+				BE93426D23CC66AB00F64850 /* DataManager.swift in Sources */,
 				BEE12795238D44FD0080D025 /* HighlightResultAuthor.swift in Sources */,
 				BE679FCA23589CB0009AF188 /* MainViewController.swift in Sources */,
 				BEE12793238D44E00080D025 /* HighlightResult.swift in Sources */,

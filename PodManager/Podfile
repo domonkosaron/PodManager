@@ -6,6 +6,5 @@ target 'PodManager' do
   use_frameworks!
 
   # Pods for PodManager
-  pod 'InstantSearchClient', '~> 7.0'
   pod 'Alamofire'
 end
